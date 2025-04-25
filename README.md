@@ -32,7 +32,7 @@ This is a simple and elegant Todo List application built using **React**. The ap
 
 ## 📸 Preview
 
-![App Screenshot](./assets/screenshot.png)
+<img width="1280" alt="Image" src="https://github.com/user-attachments/assets/44394470-27fb-44a0-aef3-b30640fc88ba" />
 > *(Update the path above if your screenshot is located elsewhere)*
 
 ## 📁 Folder Structure
