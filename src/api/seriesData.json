@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "title": "Stranger Things",
+      "image": "vite.svg",
+      "genre": "Sci-Fi, Horror",
+      "rating": "8.7",
+      "description": "A group of kids in the 1980s uncover supernatural mysteries in their town.",
+      "watchLink": "https://www.netflix.com/title/80057281"
+    },
+    {
+      "id": 2,
+      "title": "Money Heist",
+      "image": "vite.svg",
+      "genre": "Crime, Thriller",
+      "rating": "8.2",
+      "description": "A mastermind gathers criminals to pull off the biggest heist in history.",
+      "watchLink": "https://www.netflix.com/title/80192098"
+    },
+    {
+      "id": 3,
+      "title": "Breaking Bad",
+      "image": "vite.svg",
+      "genre": "Crime, Drama",
+      "rating": "9.5",
+      "description": "A chemistry teacher turns to making meth after being diagnosed with cancer.",
+      "watchLink": "https://www.netflix.com/title/70143836"
+    },
+    {
+      "id": 4,
+      "title": "Squid Game",
+      "image": "vite.svg",
+      "genre": "Thriller, Drama",
+      "rating": "8.0",
+      "description": "Hundreds of contestants risk their lives in a mysterious survival game.",
+      "watchLink": "https://www.netflix.com/title/81040344"
+    }
+  ]
+  
