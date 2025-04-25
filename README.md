@@ -34,6 +34,76 @@ This is a simple and elegant Todo List application built using **React**. The ap
 
 <img width="1280" alt="Image" src="https://github.com/user-attachments/assets/44394470-27fb-44a0-aef3-b30640fc88ba" />
 
-## 📁 Folder Structure
 
 # TodoApp
+
+## 🧑‍💻 Tech Stack & Architecture
+
+### ⚙️ Core Technologies
+
+- [**React**](https://reactjs.org/)  
+  Used for building the user interface with a component-based structure, enabling efficient state and UI management.
+
+- [**Vite**](https://vitejs.dev/)  
+  Lightning-fast frontend build tool that serves as the development environment for fast HMR and bundling.
+
+- [**Bun**](https://bun.sh/) *(Optional)*  
+  A modern JavaScript runtime used for running and bundling the project with better performance and speed than traditional Node.js setups.
+
+- **CSS**  
+  Handles UI styling, including support for light/dark mode using dynamic class toggling.
+
+---
+
+### 🧱 Project Structure
+
+- **Todo.jsx**  
+  Main component that manages global state for the todo list using `useState`, handles all core operations: add, delete, edit, toggle complete, and clear tasks. Also handles theme switching and renders child components.
+
+- **TodoForm.jsx**  
+  Contains the input form logic for adding new tasks. Uses controlled input and passes new tasks up to `Todo.jsx`.
+
+- **TodoList.jsx**  
+  Represents individual todo items. Displays task text, completion state, and interactive buttons for editing, checking, and deleting.
+
+- **TodoDate.jsx**  
+  Displays current date and time using `toLocaleDateString` and `toLocaleTimeString`.
+
+- **TodoLocalStorage.js**  
+  Handles persistent state by interacting with `localStorage`. Two utility functions:
+  - `getTodoLocalStorageData()`: Retrieves tasks from local storage
+  - `setTodoLocalStorageData()`: Saves updated tasks to local storage
+
+---
+
+### 🔄 State Management
+
+- React's `useState()` hook is used for managing:
+  - `task`: List of todo items.
+  - `isDarkMode`: Boolean for tracking light/dark theme.
+
+- All user interactions (add, delete, toggle, edit) update the state, which triggers re-rendering the UI accordingly.
+
+---
+
+### 🌓 Theme Toggling
+
+- A simple boolean `isDarkMode` toggles between two classes: default (dark) and `light`.
+- CSS handles the color transitions and background changes.
+
+---
+
+### 💾 Data Persistence
+
+- Tasks are automatically saved in `localStorage` on every change using `setTodoLocalStorageData()`, ensuring data survives page reloads or browser restarts.
+
+---
+
+### 📦 Build & Run
+
+- Development:
+  ```bash
+  bun run dev
+  # or
+  npm run dev
+
